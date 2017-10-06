@@ -56,7 +56,7 @@ analogWrite(motorPin,0); // speed of motor resulting from far middle sensor dist
   analogWrite(motorPin,160); // speed of motor resulting from middle sensor distance value
 }
 
- else if(distanceVal<20 && distanceVal>=0) // distance value for close to the sensor
+ else if(distanceVal<20 && distanceVal>0) // distance value for close to the sensor
  {
 
   analogWrite(motorPin,255); //speed of motor resulting from close sensor distance value
